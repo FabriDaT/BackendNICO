@@ -1,0 +1,278 @@
+2023-03-01 22:53:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "EMPLEADOS" no encontrada
+Table "EMPLEADOS" not found; SQL statement:
+INSERT INTO Empleados VALUES (1, 'Nico', '23049', '3571614642', 'Cervantes 564');INSERT INTO Empleados VALUES (1, 'Agos', '23050', '3571544260', 'San Pedro 100');INSERT INTO Empleados VALUES (1, 'Sandra', '23051', '3571534320', 'Carriego 137'); [42102-214]
+2023-03-01 22:53:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "FIGURAS" ya existe
+Table "FIGURAS" already exists; SQL statement:
+DROP TABLE IF EXISTS Empleados [42101-214]
+2023-03-01 23:06:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "EMPLEADO" no encontrada
+Table "EMPLEADO" not found; SQL statement:
+SELECT * FROM Empleado WHERE ID = 3; [42102-214]
+2023-03-01 23:07:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:07:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:08:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:08:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:09:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:10:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:10:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:12:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:13:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:13:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:13:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:15:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor Invalido "0" para el parametro "columnIndex"
+Invalid value "0" for parameter "columnIndex" [90008-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcResultSet.checkColumnIndex(JdbcResultSet.java:3524)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:32)
+2023-03-01 23:15:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:17:11 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Clase12.Main.main(Main.java:13)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 12 more
+2023-03-01 23:17:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:18:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:18:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:19:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:19:33 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-01 23:19:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-03 09:49:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-03 09:50:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO Empleados VALUES (1,Nico,23049,3571614642,Cervantes [*]564);INSERT INTO Empleados VALUES (1, 'Nico', '23049', '3571614642', 'Cervantes 564');INSERT INTO Empleados VALUES (2, 'Agos', '23050', '3571544260', 'San Pedro 100');INSERT INTO Empleados VALUES (3, 'Sandra', '23051', '3571534320', 'Carriego 137');"; se esperaba "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO Empleados VALUES (1,Nico,23049,3571614642,Cervantes [*]564);INSERT INTO Empleados VALUES (1, 'Nico', '23049', '3571614642', 'Cervantes 564');INSERT INTO Empleados VALUES (2, 'Agos', '23050', '3571544260', 'San Pedro 100');INSERT INTO Empleados VALUES (3, 'Sandra', '23051', '3571534320', 'Carriego 137');"; expected "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO Empleados VALUES (1,Nico,23049,3571614642,Cervantes 564);INSERT INTO Empleados VALUES (1, 'Nico', '23049', '3571614642', 'Cervantes 564');INSERT INTO Empleados VALUES (2, 'Agos', '23050', '3571544260', 'San Pedro 100');INSERT INTO Empleados VALUES (3, 'Sandra', '23051', '3571534320', 'Carriego 137'); [42001-214]
+2023-03-03 09:52:12 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Clase12.Main.main(Main.java:17)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 12 more
+2023-03-03 09:53:47 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Clase12.Main.main(Main.java:17)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 12 more
+2023-03-03 10:03:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+2023-03-03 10:08:27 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Clase12.Main.main(Main.java:25)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 12 more
+2023-03-03 10:16:56 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Clase12.Main.main(Main.java:20)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 12 more
+2023-03-03 10:43:18 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Clase12.Main.main(Main.java:20)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 12 more

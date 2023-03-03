@@ -2,3 +2,423 @@
 [2023-03-01 21:46:22] [ INFO ] [Main:26] La longitud de la lista es mayor a 10
 [2023-03-01 21:46:22] [ INFO ] [Main:31] El promedio de la lista es 7
 [2023-03-01 21:46:43] [ WARN ] [Main:20] La longitud de la lista es 0
+[2023-03-01 22:54:56] [ INFO ] [Main:36] Id repetido!
+[2023-03-01 23:06:48] [ INFO ] [Main:53] Id repetido!
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "EMPLEADO" no encontrada
+Table "EMPLEADO" not found; SQL statement:
+SELECT * FROM Empleado WHERE ID = 3; [42102-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8398)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8369)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8358)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1863)
+	at org.h2.command.Parser.readTableReference(Parser.java:2334)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2772)
+	at org.h2.command.Parser.parseSelect(Parser.java:2878)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2762)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2633)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2612)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2605)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2598)
+	at org.h2.command.Parser.parseQuery(Parser.java:2567)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:92)
+	at Clase12.Main.main(Main.java:30)
+[2023-03-01 23:07:22] [ INFO ] [Main:53] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:31)
+[2023-03-01 23:07:59] [ INFO ] [Main:53] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:31)
+[2023-03-01 23:08:13] [ INFO ] [Main:53] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:31)
+[2023-03-01 23:08:23] [ INFO ] [Main:53] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:31)
+[2023-03-01 23:09:36] [ INFO ] [Main:53] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:31)
+[2023-03-01 23:10:09] [ INFO ] [Main:53] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:31)
+[2023-03-01 23:10:33] [ INFO ] [Main:53] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:31)
+[2023-03-01 23:12:58] [ INFO ] [Main:53] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:31)
+[2023-03-01 23:13:33] [ INFO ] [Main:54] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-01 23:13:51] [ INFO ] [Main:54] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-01 23:13:59] [ INFO ] [Main:54] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-01 23:15:06] [ INFO ] [Main:54] Id repetido!
+org.h2.jdbc.JdbcSQLDataException: Valor Invalido "0" para el parametro "columnIndex"
+Invalid value "0" for parameter "columnIndex" [90008-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:646)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:298)
+	at org.h2.jdbc.JdbcResultSet.checkColumnIndex(JdbcResultSet.java:3524)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-01 23:15:40] [ INFO ] [Main:54] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-01 23:17:11] [ INFO ] [Main:55] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: "C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:168)
+	at org.h2.mvstore.db.Store.<init>(Store.java:145)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Clase12.Main.main(Main.java:13)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	... 10 more
+[2023-03-01 23:17:24] [ INFO ] [Main:32] Empleado modificado: rs2: org.h2.result.LocalResult@6b81ce95 columns: 5 rows: 1 pos: -1
+[2023-03-01 23:17:49] [ INFO ] [Main:55] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-01 23:18:07] [ INFO ] [Main:55] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-01 23:18:36] [ INFO ] [Main:56] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:283)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-01 23:19:14] [ INFO ] [Main:56] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.getIntInternal(JdbcResultSet.java:344)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:319)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-01 23:19:33] [ INFO ] [Main:56] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-01 23:19:45] [ INFO ] [Main:56] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at Clase12.Main.main(Main.java:32)
+[2023-03-03 09:49:13] [ INFO ] [Main:60] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientException: No hay datos disponibles.
+No data is available [2000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:497)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcResultSet.checkOnValidRow(JdbcResultSet.java:3552)
+	at org.h2.jdbc.JdbcResultSet.getInternal(JdbcResultSet.java:3570)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3557)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at Clase12.Main.main(Main.java:36)
+[2023-03-03 09:50:48] [ INFO ] [Main:61] Id repetido!
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO Empleados VALUES (1,Nico,23049,3571614642,Cervantes [*]564);INSERT INTO Empleados VALUES (1, 'Nico', '23049', '3571614642', 'Cervantes 564');INSERT INTO Empleados VALUES (2, 'Agos', '23050', '3571544260', 'San Pedro 100');INSERT INTO Empleados VALUES (3, 'Sandra', '23051', '3571534320', 'Carriego 137');"; se esperaba "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO Empleados VALUES (1,Nico,23049,3571614642,Cervantes [*]564);INSERT INTO Empleados VALUES (1, 'Nico', '23049', '3571614642', 'Cervantes 564');INSERT INTO Empleados VALUES (2, 'Agos', '23050', '3571544260', 'San Pedro 100');INSERT INTO Empleados VALUES (3, 'Sandra', '23051', '3571534320', 'Carriego 137');"; expected "(, ., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO Empleados VALUES (1,Nico,23049,3571614642,Cervantes 564);INSERT INTO Empleados VALUES (1, 'Nico', '23049', '3571614642', 'Cervantes 564');INSERT INTO Empleados VALUES (2, 'Agos', '23050', '3571544260', 'San Pedro 100');INSERT INTO Empleados VALUES (3, 'Sandra', '23051', '3571534320', 'Carriego 137'); [42001-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.getSyntaxError(Parser.java:900)
+	at org.h2.command.Parser.read(Parser.java:5675)
+	at org.h2.command.Parser.readIfMore(Parser.java:1268)
+	at org.h2.command.Parser.parseValuesForCommand(Parser.java:1780)
+	at org.h2.command.Parser.parseInsert(Parser.java:1661)
+	at org.h2.command.Parser.parsePrepared(Parser.java:814)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:666)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Clase12.Main.main(Main.java:31)
+[2023-03-03 09:52:12] [ INFO ] [Main:61] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: "C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:168)
+	at org.h2.mvstore.db.Store.<init>(Store.java:145)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Clase12.Main.main(Main.java:17)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	... 10 more
+[2023-03-03 09:53:47] [ INFO ] [Main:61] Id repetido!
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: "C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:168)
+	at org.h2.mvstore.db.Store.<init>(Store.java:145)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at Clase12.Main.main(Main.java:17)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/Niko/Documents/MEGAsync/Certified Tech Developer/Backend I/Backend/Database/Empleados.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	... 10 more
+[2023-03-03 09:54:05] [ INFO ] [Main:61] Id repetido!
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:1 */ 1, 'Nico', '23049', '3571614642', 'Cervantes 564')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:1 */ 1, 'Nico', '23049', '3571614642', 'Cervantes 564')"; SQL statement:
+INSERT INTO Empleados VALUES ('1','Nico','23049','3571614642','Cervantes 564') [23505-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:49)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Clase12.Main.main(Main.java:31)
+[2023-03-03 10:08:12] [ WARN ] [Main:72] ID repetidos!
+[2023-03-03 10:18:52] [ INFO ] [Main:40] Empleado{id=2, nombre='Agos', matricula='23050', telefono='3571528796', direccion='Peñaloza 314'}
+[2023-03-03 10:24:10] [ INFO ] [Main:40] Empleado{id=2, nombre='Agos', matricula='23050', telefono='3571528796', direccion='Peñaloza 314'}
+[2023-03-03 10:24:10] [ INFO ] [Main:44] Empleado con id 3 modificado
+[2023-03-03 10:37:31] [ INFO ] [Main:41] Empleado{id=2, nombre='Agos', matricula='23050', telefono='3571528796', direccion='Peñaloza 314'}
+[2023-03-03 10:37:31] [ INFO ] [Main:45] Empleado con id 3 modificado
+[2023-03-03 10:40:14] [ INFO ] [Main:39] Empleado{id=2, nombre='Agos', matricula='23050', telefono='3571528796', direccion='Peñaloza 314'}
+[2023-03-03 10:40:14] [ INFO ] [Main:43] Empleado con id 3 modificado
+[2023-03-03 10:43:36] [ INFO ] [Main:37] Empleado con id 2 modificado: Empleado{id=2, nombre='Agos', matricula='23050', telefono='3571528796', direccion='Peñaloza 314'}
+[2023-03-03 10:43:36] [ INFO ] [Main:41] Empleado con id 3 eliminado: Empleado{id=3, nombre='Bruno', matricula='23051', telefono='3571694258', direccion='Carriego 137'}
+[2023-03-03 10:44:44] [ INFO ] [Main:36] Empleado con id 2 modificado: Empleado{id=2, nombre='Agos', matricula='23050', telefono='3571528796', direccion='Peñaloza 314'}
+[2023-03-03 10:44:44] [ INFO ] [Main:40] Empleado con id 3 eliminado: Empleado{id=3, nombre='Bruno', matricula='23051', telefono='3571694258', direccion='Carriego 137'}
