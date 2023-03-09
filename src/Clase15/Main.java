@@ -17,7 +17,7 @@ public class Main {
         Paciente paciente2 = new Paciente("Bruno", "Amaya", "40159357", "25/06/2022" ,direccion1);
 
         PacienteService pacienteService = new PacienteService(new PacienteDaoH2());
-        pacienteService.crearTabla();
+        //pacienteService.crearTabla();
         pacienteService.alta(paciente);
         pacienteService.alta(paciente1);
         pacienteService.alta(paciente2);

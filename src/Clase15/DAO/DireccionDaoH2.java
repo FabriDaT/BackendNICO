@@ -93,7 +93,8 @@ public class DireccionDaoH2 implements IDao<Direccion> {
 
         private Connection conexion () {
             String DB_JDBC_DRIVER = "org.h2.Driver";
-            String DB_URL = "jdbc:h2:./Database/Integrador1";
+            //String DB_URL = "jdbc:h2:./Database/Integrador1";
+            String DB_URL = "jdbc:h2:.;INIT=RUNSCRIPT FROM 'test.sql'";
             String DB_USER = "NicoA";
             String DB_PASSWORD = "123456";
 

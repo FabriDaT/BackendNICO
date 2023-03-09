@@ -45,23 +45,23 @@ public class PacienteService {
 
     public void crearTabla() {
         String DB_JDBC_DRIVER = "org.h2.Driver";
-        String DB_URL = "jdbc:h2:./Database/Integrador1";
+        String DB_URL = "jdbc:h2:.;INIT=RUNSCRIPT FROM 'Database/test1.sql'";
         String DB_USER = "NicoA";
         String DB_PASSWORD = "123456";
-        String TABLA_CREATE_PACIENTES = "DROP TABLE IF EXISTS PACIENTES; " +
-                "CREATE TABLE PACIENTES" +
-                "(ID BIGINT PRIMARY KEY AUTO_INCREMENT, NOMBRE VARCHAR(255), APELLIDO VARCHAR(255)," +
-                "DNI VARCHAR(255), FECHA_INGRESO VARCHAR(255), DIRECCION BIGINT);";
-        String TABLA_CREATE_DIRECCIONES = "DROP TABLE IF EXISTS DIRECCION; " +
-                "CREATE TABLE DIRECCION" +
-                "(ID BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL, CALLE VARCHAR(255), NUMERO VARCHAR(255)," +
-                "LOCALIDAD VARCHAR(255), PROVINCIA VARCHAR(255));";
+//        String TABLA_CREATE_PACIENTES = "DROP TABLE IF EXISTS PACIENTES; " +
+//                "CREATE TABLE PACIENTES" +
+//                "(ID BIGINT PRIMARY KEY AUTO_INCREMENT, NOMBRE VARCHAR(255), APELLIDO VARCHAR(255)," +
+//                "DNI VARCHAR(255), FECHA_INGRESO VARCHAR(255), DIRECCION BIGINT);";
+//        String TABLA_CREATE_DIRECCIONES = "DROP TABLE IF EXISTS DIRECCION; " +
+//                "CREATE TABLE DIRECCION" +
+//                "(ID BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL, CALLE VARCHAR(255), NUMERO VARCHAR(255)," +
+//                "LOCALIDAD VARCHAR(255), PROVINCIA VARCHAR(255));";
         try {
             Class.forName(DB_JDBC_DRIVER);
             Connection connection = DriverManager.getConnection(DB_URL , DB_USER , DB_PASSWORD);
             Statement statement = connection.createStatement();
-            statement.execute(TABLA_CREATE_PACIENTES);
-            statement.execute(TABLA_CREATE_DIRECCIONES);
+//            statement.execute(TABLA_CREATE_PACIENTES);
+//            statement.execute(TABLA_CREATE_DIRECCIONES);
             statement.close();
             connection.close();
         } catch (ClassNotFoundException | SQLException e) {
