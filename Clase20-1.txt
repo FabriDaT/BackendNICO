@@ -1,0 +1,4 @@
+Nico;Amaya;25049;100000.0
+Agos;Comello;25050;150000.0
+Bruno;Martini;25051;200000.0
+Tati;Amaya;25052;250000.0
