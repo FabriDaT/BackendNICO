@@ -19,11 +19,12 @@ public class Main {
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(perros);
 
+            oos.close();
             FileInputStream fis = new FileInputStream("Listado de perros.txt");
             ObjectInputStream ois = new ObjectInputStream(fis);
             Object lectura = ois.readObject();
             System.out.println(lectura);
-
+            ois.close();
         } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }

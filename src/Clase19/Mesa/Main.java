@@ -18,12 +18,13 @@ public class Main {
             FileOutputStream fileOutputStream = new FileOutputStream("Contactos.txt");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(contactosList);
-
+            objectOutputStream.close();
             //Leemos
             FileInputStream fileInputStream = new FileInputStream("Contactos.txt");
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
             Object lectura = objectInputStream.readObject();
             System.out.println(lectura);
+            objectInputStream.close();
 
         } catch (ClassNotFoundException | IOException e) {
             throw new RuntimeException(e);
