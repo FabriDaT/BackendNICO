@@ -1,0 +1,9 @@
+[2023-04-0311:53:56] [ ERROR] [GlobalExceptionHandler:15] Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "n"
+[2023-04-0318:03:38] [ ERROR] [GlobalExceptionHandler:15] could not execute statement; SQL [n/a]; constraint ["FKGKBW2ID57VHTJBPRL3SCL9SDT: PUBLIC.CURSADAS FOREIGN KEY(ESTUDIANTE_ID) REFERENCES PUBLIC.ESTUDIANTES(ID) (CAST(5 AS BIGINT))"; SQL statement:
+delete from estudiantes where id=? [23503-214]]
+[2023-04-0318:03:48] [ ERROR] [GlobalExceptionHandler:15] could not execute statement; SQL [n/a]; constraint ["FKGKBW2ID57VHTJBPRL3SCL9SDT: PUBLIC.CURSADAS FOREIGN KEY(ESTUDIANTE_ID) REFERENCES PUBLIC.ESTUDIANTES(ID) (CAST(5 AS BIGINT))"; SQL statement:
+delete from estudiantes where id=? [23503-214]]
+[2023-04-0318:04:12] [ ERROR] [GlobalExceptionHandler:15] could not execute statement; SQL [n/a]; constraint ["FKGKBW2ID57VHTJBPRL3SCL9SDT: PUBLIC.CURSADAS FOREIGN KEY(ESTUDIANTE_ID) REFERENCES PUBLIC.ESTUDIANTES(ID) (CAST(5 AS BIGINT))"; SQL statement:
+delete from estudiantes where id=? [23503-214]]
+[2023-04-0318:04:52] [ ERROR] [GlobalExceptionHandler:15] could not execute statement; SQL [n/a]; constraint ["FKGKBW2ID57VHTJBPRL3SCL9SDT: PUBLIC.CURSADAS FOREIGN KEY(ESTUDIANTE_ID) REFERENCES PUBLIC.ESTUDIANTES(ID) (CAST(5 AS BIGINT))"; SQL statement:
+delete from estudiantes where id=? [23503-214]]
